@@ -1,0 +1,27 @@
+---
+title: "Budget and Revenue Analysis"
+---
+
+```{python}
+#| include: false
+#| warning: false
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+```
+
+This page analyzes the budgets and revenues of the 104 well-known films. @fig-scatter below summarizes and visualizes this relationship.
+
+```{python}
+#| echo: true
+#| label: fig-scatter
+#| fig-cap: "Scatter plot of budget (x-axis) against revenue (y-axis)"
+
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Budget (millions of U.S. dollars)")
+plt.ylabel("Revenue (millions of U.S. dollars)")
+plt.show()
+```

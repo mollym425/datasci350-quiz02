@@ -1,0 +1,40 @@
+---
+title: "Runtime and Rating Analysis"
+---
+
+```{python}
+#| include: false
+#| warning: false
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+```
+
+This page analyzes the runtimes and ratings of the 104 well-known films. 
+
+@fig-scatter-run below summarizes and visualizes this relationship, where runtime is given in minutes and rating is the public rating from IMDB between 0 and 10.
+
+```{python}
+#| echo: true
+#| label: fig-scatter-run
+#| fig-cap: "Scatter plot of runtime (x-axis) against rating (y-axis)"
+
+plt.scatter(films["runtime_min"], films["imdb_rating"])
+plt.xlabel("Runtime (minutes)")
+plt.ylabel("Rating (0-10)")
+plt.show()
+```
+
+@tbl-decade below provides the average IMDB ratings of films in this dataset by decade.
+
+```{python}
+#| echo: false
+#| label: tbl-decade
+#| fig-cap: "Table of the average IMDB ratings of films by decade"
+
+films["decade"] = films["year"] // 10 * 10
+films.groupby("decade")["imdb_rating"].mean().round(2)
+```

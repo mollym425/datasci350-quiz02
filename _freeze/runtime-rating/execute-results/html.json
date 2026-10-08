@@ -1,0 +1,12 @@
+{
+  "hash": "99c91f670df12f40962efec764893ba4",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Runtime and Rating Analysis\"\n---\n\n\nThis page analyzes the runtimes and ratings of the 104 well-known films. \n\n@fig-scatter-run below summarizes and visualizes this relationship, where runtime is given in minutes and rating is the public rating from IMDB between 0 and 10.\n\n::: {#cell-fig-scatter-run .cell execution_count=2}\n``` {.python .cell-code}\nplt.scatter(films[\"runtime_min\"], films[\"imdb_rating\"])\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"Rating (0-10)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Scatter plot of runtime (x-axis) against rating (y-axis)](runtime-rating_files/figure-html/fig-scatter-run-output-1.png){#fig-scatter-run width=589 height=429}\n:::\n:::\n\n\n@tbl-decade below provides the average IMDB ratings of films in this dataset by decade.\n\n::: {#tbl-decade .cell execution_count=3}\n\n::: {.cell-output .cell-output-display execution_count=3}\n```\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64\n```\n\nTable of the average IMDB ratings of films by decade\n:::\n:::\n\n\n",
+    "supporting": [
+      "runtime-rating_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

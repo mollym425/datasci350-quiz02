@@ -1,0 +1,12 @@
+{
+  "hash": "1137f2b9a375ad91f11e0e6a82877539",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Budget and Revenue Analysis\"\n---\n\n\nThis page analyzes the budgets and revenues of the 104 well-known films. @fig-scatter below summarizes and visualizes this relationship.\n\n::: {#cell-fig-scatter .cell execution_count=2}\n``` {.python .cell-code}\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Budget (millions of U.S. dollars)\")\nplt.ylabel(\"Revenue (millions of U.S. dollars)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Scatter plot of budget (x-axis) against revenue (y-axis)](budget-revenue_files/figure-html/fig-scatter-output-1.png){#fig-scatter width=602 height=429}\n:::\n:::\n\n\n",
+    "supporting": [
+      "budget-revenue_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

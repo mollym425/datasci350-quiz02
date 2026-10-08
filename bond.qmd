@@ -1,0 +1,29 @@
+---
+title: "James Bond Films Analysis"
+---
+
+```{python}
+#| include: false
+#| warning: false
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+bond = films[films["franchise"] == "James Bond"]
+
+```
+
+This page analyzes only James Bond films. The first Bond films in this dataset aired in `{python} int(bond["year"].min())` and the last Bond film aired in `{python} int(bond["year"].max())`.
+
+```{python}
+#| echo: true
+
+fig, ax = plt.subplots(figsize=(7, 3.5))
+ax.plot(bond["year"], bond["revenue_musd"])
+plt.xlabel("Year")
+plt.ylabel("Revenue (millions of U.S. dollars)")
+plt.show()
+
+```

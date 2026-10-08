@@ -1,0 +1,12 @@
+---
+title: "Box Office Analysis"
+---
+
+The dataset analyzed on this website contains 104 well-known films from 1980 to 2025. It includes the approximate budgets, worldwide revenues, runtimes, and ratings for each film. You can find the following analyses on this website:
+
+- [Budget and Revenue](budget-revenue.qmd)
+- [Runtime and Ratings](runtime-rating.qmd)
+- [The Bond Films](bond.qmd)
+
+I did not use any AI tools during this quiz. I did reference Lectures 10-11 notes.
+
