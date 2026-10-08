@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Budget and Revenue Analysis",
+    "section": "",
+    "text": "This page analyzes the budgets and revenues of the 104 well-known films. Figure 1 below summarizes and visualizes this relationship.\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Budget (millions of U.S. dollars)\")\nplt.ylabel(\"Revenue (millions of U.S. dollars)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Scatter plot of budget (x-axis) against revenue (y-axis)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Box Office Analysis",
+    "section": "",
+    "text": "The dataset analyzed on this website contains 104 well-known films from 1980 to 2025. It includes the approximate budgets, worldwide revenues, runtimes, and ratings for each film. You can find the following analyses on this website:\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nI did not use any AI tools during this quiz. I did reference Lectures 10-11 notes."
+  },
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Runtime and Rating Analysis",
+    "section": "",
+    "text": "This page analyzes the runtimes and ratings of the 104 well-known films.\nFigure 1 below summarizes and visualizes this relationship, where runtime is given in minutes and rating is the public rating from IMDB between 0 and 10.\n\nplt.scatter(films[\"runtime_min\"], films[\"imdb_rating\"])\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"Rating (0-10)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Scatter plot of runtime (x-axis) against rating (y-axis)\n\n\n\n\n\nTable 1 below provides the average IMDB ratings of films in this dataset by decade.\n\n\n\n\nTable 1\n\n\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64\nTable of the average IMDB ratings of films by decade"
+  },
+  {
+    "objectID": "bond.html",
+    "href": "bond.html",
+    "title": "James Bond Films Analysis",
+    "section": "",
+    "text": "This page analyzes only James Bond films. The first Bond films in this dataset aired in 1995 and the last Bond film aired in 2021.\n\nfig, ax = plt.subplots(figsize=(7, 3.5))\nax.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Revenue (millions of U.S. dollars)\")\nplt.show()"
+  }
+]
