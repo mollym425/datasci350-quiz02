@@ -32,5 +32,22 @@ other steps completed in my text editor
 
 # Task 10:
 quarto render
+"_freeze/" folder appeared
+git add . && git commit -m "Add site pages and freeze"
+
+# Task 11: 
+quarto publish gh-pages 
+I used the above route to publish the site
+
+# Task 12:
+I checked that all four pages load and the navigation works
+
+# Task 13:
+git add . && git commit -m "Add command log"
+
+# Task 14:
+git push
+
+
 
 
